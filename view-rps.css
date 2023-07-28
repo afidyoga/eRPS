@@ -1,0 +1,313 @@
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.view-rps-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1336px;
+  height: 1323px;
+}
+.view-rps-item {
+  top: 1260px;
+  left: 0;
+  border-radius: 5px;
+  background-color: #300e6a;
+  border: 1px solid #fbfbfb;
+  box-sizing: border-box;
+  width: 1336px;
+  height: 67px;
+}
+.rectangle-div,
+.view-rps-inner,
+.view-rps-item {
+  position: absolute;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.view-rps-inner {
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  background-color: #300e6a;
+  border: 1px solid #fbfbfb;
+  box-sizing: border-box;
+  width: 1336px;
+  height: 67px;
+}
+.rectangle-div {
+  top: 109px;
+  left: 53px;
+  background-color: #fff;
+  width: 1230px;
+  height: 1020px;
+}
+.view-rps-child1,
+.view-rps-child2 {
+  position: absolute;
+  top: 904px;
+  left: 310.5px;
+  width: 1px;
+  height: 132px;
+}
+.view-rps-child2 {
+  left: 973.5px;
+}
+.view-rps-child3,
+.view-rps-child4 {
+  position: absolute;
+  top: 904px;
+  left: 974px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  width: 231px;
+  height: 88px;
+}
+.view-rps-child4 {
+  top: 991px;
+  width: 282px;
+  height: 45px;
+}
+.no {
+  margin: 0;
+}
+.halaman,
+.no-tgl-disusun-container {
+  position: absolute;
+  top: 904px;
+  left: 1040px;
+  font-size: 20px;
+}
+.halaman {
+  top: 998px;
+  left: 1053px;
+}
+.cetak,
+.cetak-wrapper {
+  display: flex;
+  align-items: center;
+}
+.cetak {
+  position: relative;
+  font-size: 32px;
+  font-family: Poppins;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  width: 206px;
+  height: 54px;
+  flex-shrink: 0;
+}
+.cetak-wrapper {
+  cursor: pointer;
+  border: 0;
+  padding: 6px 0;
+  background-color: #65ca4a;
+  position: absolute;
+  top: 1165px;
+  left: 581px;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 205px;
+  height: 60px;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+.juni-2023 {
+  position: absolute;
+  top: 655px;
+  left: 493px;
+}
+.april-2023,
+.div2 {
+  position: absolute;
+  top: 657px;
+  left: 755px;
+}
+.div2 {
+  top: 651px;
+  left: 1127px;
+}
+.tgl-berlaku,
+.tgl-disusun1 {
+  position: absolute;
+  top: 605px;
+  left: 493px;
+}
+.tgl-disusun1 {
+  top: 609px;
+  left: 761px;
+}
+.revisi1,
+.view-rps-child5 {
+  position: absolute;
+  top: 605px;
+  left: 1096px;
+}
+.view-rps-child5 {
+  top: 484px;
+  left: 86px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  width: 1170px;
+  height: 70px;
+}
+.view-rps-child10,
+.view-rps-child6,
+.view-rps-child7,
+.view-rps-child8,
+.view-rps-child9 {
+  position: absolute;
+  top: 554px;
+  left: 86px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  width: 1170px;
+  height: 48px;
+}
+.view-rps-child10,
+.view-rps-child7,
+.view-rps-child8,
+.view-rps-child9 {
+  top: 602px;
+}
+.view-rps-child10,
+.view-rps-child8,
+.view-rps-child9 {
+  top: 650px;
+}
+.view-rps-child10,
+.view-rps-child9 {
+  top: 698px;
+  height: 132px;
+}
+.view-rps-child10 {
+  top: 904px;
+}
+.rencana-pembelajaran-semester-container,
+.rps-dt-00 {
+  position: absolute;
+  top: 926px;
+  left: 344px;
+}
+.rps-dt-00 {
+  top: 653px;
+  left: 173px;
+}
+.disetujui-oleh-dekan-container {
+  position: absolute;
+  top: 723px;
+  left: 97px;
+}
+.diperiksa-oleh-kaprodi-container {
+  position: absolute;
+  top: 727px;
+  left: 472px;
+}
+.disusun-oleh-koordinator-container {
+  position: absolute;
+  top: 732px;
+  left: 732px;
+}
+.disusun-oleh-koordinator-container1,
+.no1 {
+  position: absolute;
+  top: 723px;
+  left: 1025px;
+}
+.no1 {
+  top: 602px;
+  left: 227px;
+}
+.program-studi-d3 {
+  position: absolute;
+  top: 550px;
+  left: 351px;
+  font-size: 40px;
+}
+.mata-kuliah,
+.universitas-amikom-yogyakarta {
+  position: absolute;
+  top: 490px;
+  left: 288px;
+  font-size: 40px;
+}
+.universitas-amikom-yogyakarta {
+  top: 412px;
+  left: 389px;
+  display: flex;
+  color: #750075;
+  align-items: center;
+  justify-content: center;
+  width: 558px;
+  height: 64px;
+}
+.rectangle-icon,
+.view-rps-child11 {
+  position: absolute;
+  top: 238px;
+  left: 581px;
+  width: 174px;
+  height: 174px;
+  object-fit: cover;
+  opacity: 1;
+}
+.rectangle-icon.animate,
+.view-rps-child11.animate {
+  animation: 3s ease 0s 1 normal forwards rotate-center;
+}
+.view-rps-child11 {
+  top: 919px;
+  left: 155px;
+  width: 101px;
+  height: 101px;
+}
+.fm-pjm-011rev0025-jan-2018,
+.rencana-pembelajaran-semester1 {
+  position: absolute;
+  top: 134px;
+  left: 288px;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: Poppins;
+}
+.fm-pjm-011rev0025-jan-2018 {
+  top: 188px;
+  left: 472px;
+  font-size: 24px;
+}
+.yogyakarta {
+  color: #f9a007;
+}
+.universitas-amikom-yogyakarta-container1 {
+  line-break: anywhere;
+  width: 100%;
+}
+.universitas-amikom-yogyakarta-container {
+  position: absolute;
+  top: 1259px;
+  left: 373px;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  width: 558px;
+  height: 64px;
+  color: #fff;
+}
+.view-rps {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 1327px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 32px;
+  color: #000;
+  font-family: "PT Sans";
+}

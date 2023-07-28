@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./view-rps.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=PT Sans:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Porter Sans Block:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="view-rps">
+      <img class="view-rps-child" alt="" src="./public/rectangle-5892.svg" />
+
+      <div class="view-rps-item"></div>
+      <div class="view-rps-inner"></div>
+      <div class="rectangle-div"></div>
+      <img class="view-rps-child1" alt="" src="./public/vector-16.svg" />
+
+      <img class="view-rps-child2" alt="" src="./public/vector-16.svg" />
+
+      <div class="view-rps-child3"></div>
+      <div class="view-rps-child4"></div>
+      <div class="no-tgl-disusun-container">
+        <p class="no">No</p>
+        <p class="no">Tgl Disusun</p>
+        <p class="no">Revisi</p>
+      </div>
+      <div class="halaman">Halaman</div>
+      <button class="cetak-wrapper" id="frameButton">
+        <b class="cetak">CETAK</b>
+      </button>
+      <div class="juni-2023">2 Juni 2023</div>
+      <div class="april-2023">2 April 2023</div>
+      <div class="div2">0</div>
+      <b class="tgl-berlaku">Tgl Berlaku</b>
+      <b class="tgl-disusun1">Tgl Disusun</b>
+      <b class="revisi1">Revisi</b>
+      <div class="view-rps-child5"></div>
+      <div class="view-rps-child6"></div>
+      <div class="view-rps-child7"></div>
+      <div class="view-rps-child8"></div>
+      <div class="view-rps-child9"></div>
+      <div class="view-rps-child10"></div>
+      <div class="rencana-pembelajaran-semester-container">
+        <p class="no">RENCANA PEMBELAJARAN SEMESTER (RPS)</p>
+        <p class="no">PROGRAM STUDI : D3 TEKNIK INFORMATIKA</p>
+      </div>
+      <div class="rps-dt-00">RPS-DT-00</div>
+      <div class="disetujui-oleh-dekan-container">
+        <p class="no">Disetujui oleh</p>
+        <p class="no">Dekan Ilmu Komputer</p>
+      </div>
+      <div class="diperiksa-oleh-kaprodi-container">
+        <p class="no">Diperiksa oleh</p>
+        <p class="no">Kaprodi D3TI</p>
+      </div>
+      <div class="disusun-oleh-koordinator-container">
+        <p class="no">Disusun oleh</p>
+        <p class="no">Koordinator MK</p>
+      </div>
+      <div class="disusun-oleh-koordinator-container1">
+        <p class="no">Disusun oleh</p>
+        <p class="no">Koordinator MK</p>
+      </div>
+      <b class="no1">No</b>
+      <b class="program-studi-d3">Program Studi: D3 Teknik Informatika</b>
+      <b class="mata-kuliah">MATA KULIAH : PENDIDIKAN PANCASILA (DT001)</b>
+      <b class="universitas-amikom-yogyakarta">Universitas Amikom Yogyakarta</b>
+      <img
+        class="rectangle-icon"
+        alt=""
+        src="./public/rectangle-5922@2x.png"
+        data-animate-on-scroll
+      />
+
+      <img
+        class="view-rps-child11"
+        alt=""
+        src="./public/rectangle-5923@2x.png"
+        data-animate-on-scroll
+      />
+
+      <div class="rencana-pembelajaran-semester1">
+        RENCANA PEMBELAJARAN SEMESTER (RPS)
+      </div>
+      <div class="fm-pjm-011rev0025-jan-2018">
+        FM-PJM-011/Rev.00/25 Jan 2018
+      </div>
+      <b class="universitas-amikom-yogyakarta-container">
+        <span class="universitas-amikom-yogyakarta-container1">
+          <span>Universitas Amikom </span>
+          <span class="yogyakarta">Yogyakarta</span>
+        </span>
+      </b>
+    </div>
+
+    <script>
+      var frameButton = document.getElementById("frameButton");
+      if (frameButton) {
+        frameButton.addEventListener("click", function (e) {
+          window.open("/");
+        });
+      }
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>

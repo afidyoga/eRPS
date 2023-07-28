@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=PT Sans:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Porter Sans Block:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="dashboard11">
+      <div class="dashboard-child"></div>
+      <nav class="dashboard-item"></nav>
+      <div class="dashboard-child"></div>
+      <img
+        class="logo-icon11"
+        alt=""
+        src="./public/logo@2x.png"
+        data-animate-on-scroll
+      />
+
+      <div class="dashboard-child1"></div>
+      <b class="e-rps-container11" data-animate-on-scroll>
+        <span>E - </span>
+        <span class="rps11">RPS</span>
+      </b>
+      <div class="dosen11">Dosen</div>
+      <div class="hello-mohamad-afid-container11">
+        <b>Hello</b>
+        <span class="mohamad-afid-yoga11"
+          >, Mohamad Afid Yoga Pratama Putra</span
+        >
+      </div>
+      <b class="wib20">14:03 WIB</b>
+      <b class="b28">15/05/2023</b>
+      <div class="dashboard-child2"></div>
+      <footer class="dashboard-child3"></footer>
+      <div class="copyright-202314">Copyright @ 2023</div>
+      <img
+        class="ant-designsearch-outlined-icon11"
+        alt=""
+        src="./public/antdesignsearchoutlined.svg"
+      />
+
+      <input class="search8" type="search" placeholder="Search" />
+
+      <img
+        class="dashboard-child4"
+        alt=""
+        src="./public/group-8551.svg"
+        id="groupIcon"
+      />
+
+      <button class="iconcircle-arrow-left11">
+        <img
+          class="circle-arrow-left-icon1"
+          alt=""
+          src="./public/circlearrowleft1.svg"
+        />
+      </button>
+      <img class="dashboard-child5" alt="" src="./public/vector-4.svg" />
+
+      <img class="dashboard-child6" alt="" src="./public/vector-4.svg" />
+
+      <img class="dashboard-child7" alt="" src="./public/vector-4.svg" />
+
+      <button class="iconnotebook-parent" id="frameButton">
+        <img class="iconnotebook11" alt="" src="./public/iconnotebook.svg" />
+
+        <div class="mata-kuliah13">Mata Kuliah</div>
+      </button>
+      <button class="iconarrow-right-parent8" id="frameButton1">
+        <img class="iconnotebook11" alt="" src="./public/iconarrowright.svg" />
+
+        <div class="keluar11">Keluar</div>
+      </button>
+      <div class="rectangle-parent44">
+        <div class="frame-child120"></div>
+        <button class="frame-parent12">
+          <div class="rectangle-parent45">
+            <div class="frame-child121"></div>
+            <div class="frame-child122"></div>
+            <div class="frame-child123"></div>
+            <div class="frame-child124"></div>
+          </div>
+          <div class="dashboard12">Dashboard</div>
+        </button>
+      </div>
+      <img
+        class="mask-group-icon11"
+        alt=""
+        src="./public/mask-group@2x.png"
+        id="maskGroupIcon"
+      />
+
+      <img class="vector-icon13" alt="" src="./public/vector4.svg" />
+
+      <div class="rectangle-parent46">
+        <img
+          class="frame-child125"
+          alt=""
+          src="./public/rectangle-5921@2x.png"
+          data-animate-on-scroll
+        />
+
+        <div class="selamat-datang-di-container">
+          <p class="selamat-datang-di">
+            SELAMAT DATANG DI SISTEM ELEKTRONIK RENCANA PEMBELAJARAN
+          </p>
+          <p class="selamat-datang-di">
+            <span>SEMESTER</span>
+            <span class="e-"> (E-</span>
+            <span class="rps11">RPS) </span>
+          </p>
+          <p class="selamat-datang-di">UNIVERSITAS AMIKOM YOGYAKARTA</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var groupIcon = document.getElementById("groupIcon");
+      if (groupIcon) {
+        groupIcon.addEventListener("click", function (e) {
+          window.location.href = "./not-found.html";
+        });
+      }
+      
+      var frameButton = document.getElementById("frameButton");
+      if (frameButton) {
+        frameButton.addEventListener("click", function (e) {
+          window.location.href = "./mata-kuliah.html";
+        });
+      }
+      
+      var frameButton1 = document.getElementById("frameButton1");
+      if (frameButton1) {
+        frameButton1.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      
+      var maskGroupIcon = document.getElementById("maskGroupIcon");
+      if (maskGroupIcon) {
+        maskGroupIcon.addEventListener("click", function (e) {
+          window.location.href = "./not-found.html";
+        });
+      }
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>

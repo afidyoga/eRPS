@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./not-found.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=PT Sans:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Porter Sans Block:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="not-found">
+      <img class="not-found-child" alt="" src="./public/rectangle-5891.svg" />
+
+      <div class="not-found-item"></div>
+      <div class="not-found-inner"></div>
+      <div class="copyright-20231">Copyright @ 2023</div>
+      <div class="not-found-child1"></div>
+      <img
+        class="not-found-child2"
+        alt=""
+        src="./public/rectangle-592@2x.png"
+        data-animate-on-scroll
+      />
+
+      <div class="div4" data-animate-on-scroll>404</div>
+      <div class="page-not-found-container" data-animate-on-scroll>
+        <span class="page-not-found-container1">
+          <p class="blank-line">&nbsp;</p>
+          <p class="blank-line">Page Not Found</p>
+        </span>
+      </div>
+      <b class="universitas-amikom-yogyakarta-container2">
+        <span class="page-not-found-container1">
+          <span>Universitas Amikom </span>
+          <span class="yogyakarta1">Yogyakarta</span>
+        </span>
+      </b>
+    </div>
+
+    <script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>

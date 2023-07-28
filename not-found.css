@@ -1,0 +1,143 @@
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes tilt-in-top-1 {
+  0% {
+    transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
+  }
+}
+.not-found-child,
+.not-found-inner,
+.not-found-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1336px;
+  height: 1187px;
+}
+.not-found-inner,
+.not-found-item {
+  top: 1121px;
+  border-radius: 5px;
+  background-color: #300e6a;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid #fbfbfb;
+  box-sizing: border-box;
+  height: 67px;
+}
+.not-found-inner {
+  top: 0;
+}
+.copyright-20231 {
+  position: absolute;
+  top: 1141px;
+  left: 586px;
+  font-weight: 600;
+}
+.not-found-child1 {
+  position: absolute;
+  top: 109px;
+  left: 53px;
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 1230px;
+  height: 970px;
+}
+.not-found-child2 {
+  position: absolute;
+  top: 248px;
+  left: 550px;
+  width: 235px;
+  height: 235px;
+  object-fit: cover;
+  opacity: 1;
+}
+.not-found-child2.animate {
+  animation: 3s ease 0s 1 normal forwards rotate-center;
+}
+.div4 {
+  position: absolute;
+  top: 531px;
+  left: 480px;
+  font-size: 128px;
+  font-family: "Porter Sans Block";
+  color: #000;
+  display: inline-block;
+  width: 401px;
+  height: 181px;
+  -webkit-text-stroke: 5px #750075;
+  opacity: 0;
+}
+.div4.animate {
+  animation: 2s ease 0s 1 normal forwards slide-in-top;
+}
+.blank-line {
+  margin: 0;
+}
+.page-not-found-container1 {
+  line-break: anywhere;
+  width: 100%;
+}
+.page-not-found-container {
+  position: absolute;
+  top: 594px;
+  left: 433px;
+  font-size: 36px;
+  font-weight: 600;
+  color: #000;
+  display: flex;
+  align-items: center;
+  width: 470px;
+  height: 138px;
+  -webkit-text-stroke: 1px #fc0;
+  opacity: 0;
+}
+.page-not-found-container.animate {
+  animation: 1s ease 0s 1 normal forwards tilt-in-top-1;
+}
+.yogyakarta1 {
+  color: #f9a007;
+}
+.universitas-amikom-yogyakarta-container2 {
+  position: absolute;
+  top: -4px;
+  left: 370px;
+  font-size: 40px;
+  display: flex;
+  font-family: "PT Sans";
+  align-items: center;
+  width: 558px;
+  height: 64px;
+}
+.not-found {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 1188px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  font-family: Poppins;
+}

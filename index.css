@@ -1,0 +1,379 @@
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  to {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+@keyframes shake-horizontal {
+  0%,
+  to {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px);
+  }
+  80% {
+    transform: translateX(8px);
+  }
+  90% {
+    transform: translateX(-8px);
+  }
+}
+@keyframes roll-in-left {
+  0% {
+    transform: translateX(-50px) rotate(-540deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+.sistem-elektronik-rencana {
+  margin: 0;
+}
+.sistem-elektronik-rencana-container {
+  position: absolute;
+  top: 255px;
+  left: 134px;
+  text-align: center;
+}
+.login-dosen {
+  position: absolute;
+  top: 349px;
+  left: 213px;
+  color: #300e6a;
+  opacity: 1;
+}
+.login-dosen.animate {
+  animation: 2s ease 0s 1 normal forwards bounce-top;
+}
+.again {
+  color: #f9a007;
+}
+.hello-again-container {
+  position: absolute;
+  top: 427px;
+  left: 162px;
+  font-size: 36px;
+  -webkit-text-stroke: 1px #fff;
+  opacity: 1;
+  color: #4a1b9d;
+}
+.hello-again-container.animate {
+  animation: 1s ease 0s 1 normal forwards shake-horizontal;
+}
+.logo-amikom-1 {
+  position: absolute;
+  top: 65px;
+  left: 211px;
+  width: 181px;
+  height: 180px;
+  object-fit: cover;
+  opacity: 0;
+}
+.logo-amikom-1.animate {
+  animation: 3s ease 0s 1 normal forwards roll-in-left;
+}
+.frame-child,
+.sistem-elektronik-rencana-pemb-parent {
+  border-radius: 21px;
+  backdrop-filter: blur(35px);
+  box-sizing: border-box;
+  width: 594px;
+  height: 635px;
+}
+.sistem-elektronik-rencana-pemb-parent {
+  position: relative;
+  background-color: #f2f2f2;
+  border: 1px solid #f9a007;
+}
+.frame-child {
+  position: absolute;
+  top: 31px;
+  left: 17px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #000;
+  display: none;
+}
+.log-in1 {
+  position: relative;
+  font-size: 18px;
+  font-family: Poppins;
+  color: #fff;
+  text-align: left;
+}
+.log-in-wrapper {
+  cursor: pointer;
+  border: 0;
+  padding: 4px 218px;
+  background-color: #f9a007;
+  position: absolute;
+  top: 392px;
+  left: 23px;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 490px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+.span {
+  text-decoration: underline;
+}
+.belum-punya-akun-container {
+  position: absolute;
+  top: 0;
+  left: 280px;
+  font-size: 15px;
+  font-family: Poppins;
+  color: #000;
+  text-align: left;
+}
+.daftar-sekarang {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 436px;
+  font-size: 15px;
+  text-decoration: underline;
+  color: #1f1ffe;
+  display: inline-block;
+}
+.atau,
+.daftar-sekarang,
+.log-in2,
+.lupa-password {
+  font-family: Poppins;
+  text-align: left;
+}
+.log-in2 {
+  position: absolute;
+  top: 27px;
+  left: 0;
+  font-size: 27px;
+  color: #4a1b9d;
+}
+.atau,
+.lupa-password {
+  font-size: 15px;
+  display: inline-block;
+}
+.lupa-password {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 334px;
+  left: 388px;
+  text-decoration: underline;
+  color: #00f;
+}
+.atau {
+  position: relative;
+  color: rgba(0, 0, 0, 0.33);
+  width: 38px;
+}
+.frame-item {
+  position: relative;
+  width: 489px;
+  height: 2px;
+  margin-top: -11px;
+}
+.atau-parent {
+  position: absolute;
+  top: 460px;
+  left: 13px;
+  width: 489px;
+  height: 23px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0 11px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-end;
+}
+.google-icon {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.masuk-dengan-google {
+  position: relative;
+  font-size: 17px;
+  font-family: "PT Sans";
+  color: #8a8a8a;
+  text-align: center;
+}
+.google-parent {
+  width: 206px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 9px;
+}
+.frame-wrapper {
+  cursor: pointer;
+  border: 0;
+  padding: 0 142px;
+  background-color: #fff;
+  position: absolute;
+  top: 516px;
+  left: 83px;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  width: 491px;
+  height: 57px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: flex-end;
+  justify-content: center;
+}
+.div,
+.nidn {
+  position: absolute;
+  top: 133px;
+  left: 26px;
+  font-size: 18px;
+  font-family: Poppins;
+  color: #313030;
+  text-align: left;
+}
+.div {
+  top: 128px;
+  left: 194px;
+  font-size: 24px;
+  color: #9d9a9a;
+}
+.frame-inner {
+  position: absolute;
+  top: 164px;
+  left: 208px;
+  width: 308px;
+  height: 2px;
+}
+.div1,
+.input,
+.password {
+  position: absolute;
+  font-family: Poppins;
+  text-align: left;
+}
+.input {
+  border: 0;
+  font-size: 14px;
+  background-color: transparent;
+  top: 137px;
+  left: 208px;
+  color: #afaeae;
+}
+.div1,
+.password {
+  top: 268px;
+  left: 26px;
+  font-size: 18px;
+  color: #313030;
+}
+.div1 {
+  top: 263px;
+  left: 194px;
+  font-size: 24px;
+  color: #9d9a9a;
+}
+.group-input,
+.vector-icon {
+  position: absolute;
+  top: 299px;
+  left: 208px;
+  width: 308px;
+  height: 2px;
+}
+.group-input {
+  border: 0;
+  background-color: transparent;
+  top: 277px;
+  left: 211px;
+  width: 134px;
+  height: 8px;
+}
+.mdieye-off-outline-icon {
+  position: absolute;
+  top: 274px;
+  left: 493px;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+}
+.rectangle-parent {
+  position: relative;
+  width: 559px;
+  height: 573px;
+}
+.log-in {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 49px 34px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  font-size: 27px;
+  color: #000;
+  font-family: Poppins;
+}

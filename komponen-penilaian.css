@@ -1,0 +1,503 @@
+@keyframes roll-in-left {
+  0% {
+    transform: translateX(-50px) rotate(-540deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes tilt-in-top-1 {
+  0% {
+    transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
+  }
+}
+.b13,
+.wib8 {
+  position: absolute;
+  top: 81px;
+  left: 1068px;
+  font-size: 14px;
+  font-family: "PT Sans";
+  color: #000;
+}
+.wib8 {
+  left: 1158px;
+}
+.komponen-penilaian-child {
+  position: absolute;
+  top: 18px;
+  left: 257px;
+  border-radius: 27px;
+  background-color: #ffecec;
+  width: 368px;
+  height: 33px;
+}
+.komponen-penilaian-item {
+  position: absolute;
+  top: 70px;
+  left: 212px;
+  background-color: #f2f2f2;
+  width: 1128px;
+  height: 1118px;
+}
+.group-item,
+.komponen-penilaian-inner {
+  position: absolute;
+  top: 69px;
+  left: 208px;
+  width: 1128px;
+  height: 1118px;
+}
+.group-item {
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  background-color: #65ca4a;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 123px;
+  height: 39px;
+}
+.simpan3 {
+  position: absolute;
+  top: 5px;
+  left: 16px;
+  display: inline-block;
+  width: 92.53px;
+  height: 33.8px;
+}
+.group-div {
+  position: absolute;
+  top: 394px;
+  left: 1175px;
+  width: 123px;
+  height: 39px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 17px;
+}
+.matkul-child1 {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  background-color: #00bcd4;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 1071px;
+  height: 67px;
+}
+.presentase-penilaian2 {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  font-weight: 500;
+  display: inline-block;
+  width: 405px;
+}
+.group-inner {
+  position: absolute;
+  top: 40px;
+  left: 775px;
+  border-radius: 5px;
+  width: 296px;
+  height: 49px;
+}
+.div7,
+.selection {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 750px;
+  height: 52px;
+}
+.div7 {
+  top: 49px;
+  left: 785px;
+  font-weight: 500;
+  color: #000;
+  display: inline-block;
+  width: 33px;
+  height: 42px;
+}
+.presentase-penilaian-parent {
+  position: absolute;
+  top: 98px;
+  left: 1px;
+  width: 1071px;
+  height: 92px;
+}
+.komponen1 {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  font-weight: 500;
+}
+.group-child1,
+.kuis1 {
+  position: absolute;
+  top: 44px;
+}
+.group-child1 {
+  left: 0;
+  border-radius: 5px;
+  width: 1071px;
+  height: 49px;
+}
+.kuis1 {
+  border: 0;
+  background-color: transparent;
+  font-weight: 500;
+  font-family: Poppins;
+  font-size: 20px;
+  left: 10px;
+  color: #000;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 698px;
+  height: 54px;
+}
+.group-parent,
+.komponen-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1071px;
+  height: 98px;
+}
+.group-parent {
+  top: 90px;
+  width: 1072px;
+  height: 190px;
+  color: #adadad;
+}
+.tambah-komponen-penilaian {
+  position: absolute;
+  top: 18px;
+  left: 29px;
+  font-weight: 500;
+}
+.group-child2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  background-color: #f9a007;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 123px;
+  height: 39px;
+}
+.kembali3 {
+  position: absolute;
+  top: 3.6px;
+  left: 30.36px;
+  display: inline-block;
+  width: 92.53px;
+  height: 33.8px;
+}
+.iconarrow-left3 {
+  position: absolute;
+  top: calc(50% - 14.5px);
+  left: calc(50% - 53.5px);
+  width: 24px;
+  height: 24px;
+}
+.rectangle-parent16 {
+  position: absolute;
+  top: 13px;
+  left: 939px;
+  width: 123px;
+  height: 39px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 17px;
+}
+.matkul5 {
+  position: absolute;
+  top: 98px;
+  left: 222px;
+  width: 1072px;
+  height: 280px;
+}
+.komponen-penilaian-child1,
+.komponen-penilaian-child2 {
+  position: absolute;
+  left: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.komponen-penilaian-child1 {
+  top: 1121px;
+  border-radius: 5px;
+  background-color: #300e6a;
+  border: 1px solid #fbfbfb;
+  box-sizing: border-box;
+  width: 1336px;
+  height: 67px;
+}
+.komponen-penilaian-child2 {
+  top: 69px;
+  background-color: #fff;
+  width: 209px;
+  height: 1119px;
+}
+.komponen-penilaian-child3 {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #4a1b9d;
+  width: 1336px;
+  height: 69px;
+}
+.komponen-penilaian-child4 {
+  border: 0;
+  background-color: #ffecec;
+  position: absolute;
+  top: 18px;
+  left: 257px;
+  border-radius: 27px;
+  width: 368px;
+  height: 33px;
+}
+.logo-icon4 {
+  position: absolute;
+  top: 18px;
+  left: 19px;
+  width: 34px;
+  height: 34px;
+  object-fit: cover;
+  opacity: 0;
+  cursor: pointer;
+}
+.logo-icon4.animate {
+  animation: 1s ease 0s 1 normal forwards roll-in-left;
+}
+.copyright-20236 {
+  position: absolute;
+  top: 1141px;
+  left: 690px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+.rps4 {
+  color: #f9a007;
+}
+.e-rps-container4 {
+  position: absolute;
+  top: 26px;
+  left: 59px;
+  font-size: 12px;
+  display: inline-block;
+  font-family: "PT Sans";
+  width: 69px;
+  opacity: 0;
+  cursor: pointer;
+}
+.e-rps-container4.animate {
+  animation: 1s ease 0s 1 normal forwards tilt-in-top-1;
+}
+.mohamad-afid-yoga4 {
+  font-size: 14px;
+  font-weight: 200;
+  color: #fff;
+}
+.dosen4,
+.hello-mohamad-afid-container4 {
+  position: absolute;
+  top: 14px;
+  left: 885px;
+  text-align: justify;
+  font-size: 18px;
+  color: #65ca4a;
+}
+.dosen4 {
+  top: 37px;
+  left: 1144px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #f9a007;
+}
+.ant-designsearch-outlined-icon4,
+.komponen-penilaian-child5 {
+  position: absolute;
+  top: 26px;
+  left: 268px;
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+}
+.komponen-penilaian-child5 {
+  height: 1.77%;
+  width: 1.35%;
+  top: 2.02%;
+  right: 9.21%;
+  bottom: 96.21%;
+  left: 89.45%;
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+}
+.iconcircle-arrow-left4 {
+  position: absolute;
+  top: calc(50% - 235px);
+  left: calc(50% - 583px);
+  width: 35px;
+  height: 35px;
+}
+.komponen-penilaian-child6,
+.komponen-penilaian-child7,
+.komponen-penilaian-child8 {
+  position: absolute;
+  top: 261px;
+  left: 25.99px;
+  width: 163.01px;
+  height: 3px;
+}
+.komponen-penilaian-child7,
+.komponen-penilaian-child8 {
+  top: 327px;
+}
+.komponen-penilaian-child8 {
+  top: 191px;
+}
+.iconnotebook4,
+.mata-kuliah6 {
+  position: absolute;
+  top: 0;
+  left: 77px;
+}
+.iconnotebook4 {
+  height: 90%;
+  width: 13.85%;
+  top: 3.33%;
+  right: 70.26%;
+  bottom: 6.67%;
+  left: 15.9%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.group-child3 {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  border-radius: 4px;
+  background-color: #4a1b9d;
+  width: 11px;
+  height: 22px;
+}
+.mata-kuliah-parent {
+  position: absolute;
+  top: 211px;
+  left: -6px;
+  width: 195px;
+  height: 30px;
+  cursor: pointer;
+  color: #2196f3;
+}
+.keluar4 {
+  position: absolute;
+  top: 0;
+  left: 45px;
+}
+.iconarrow-right4 {
+  position: absolute;
+  top: calc(50% - 13px);
+  left: calc(50% - 54.5px);
+  width: 27px;
+  height: 27px;
+}
+.keluar-parent {
+  position: absolute;
+  top: 282px;
+  left: 26px;
+  width: 109px;
+  height: 30px;
+  cursor: pointer;
+  color: #f44336;
+}
+.group-child4,
+.group-child5,
+.group-child6,
+.group-child7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f9a007;
+  width: 9.53px;
+  height: 11.73px;
+}
+.group-child5,
+.group-child6,
+.group-child7 {
+  top: 14.67px;
+  height: 7.33px;
+}
+.group-child6,
+.group-child7 {
+  top: 0;
+  left: 12.47px;
+}
+.group-child7 {
+  top: 10.27px;
+  height: 11.73px;
+}
+.rectangle-parent17 {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+}
+.dashboard-parent,
+.komponen-penilaian-inner1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 157px;
+  height: 30px;
+}
+.komponen-penilaian-inner1 {
+  top: 141px;
+  left: 26px;
+  cursor: pointer;
+  color: #f9a007;
+}
+.mask-group-icon4 {
+  position: absolute;
+  top: 12px;
+  left: 1227px;
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.vector-icon6 {
+  position: absolute;
+  height: 1.66%;
+  width: 1.2%;
+  top: 3.37%;
+  right: 5.31%;
+  bottom: 94.98%;
+  left: 93.49%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.komponen-penilaian1 {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 1188px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 20px;
+  color: #fff;
+  font-family: Poppins;
+}

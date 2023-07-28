@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=PT Sans:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Porter Sans Block:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="log-in">
+      <div class="sistem-elektronik-rencana-pemb-parent">
+        <div class="sistem-elektronik-rencana-container">
+          <p class="sistem-elektronik-rencana">Sistem Elektronik Rencana</p>
+          <p class="sistem-elektronik-rencana">Pembelajaran Semester</p>
+        </div>
+        <b class="login-dosen" data-animate-on-scroll>Login Dosen</b>
+        <b class="hello-again-container" data-animate-on-scroll>
+          <span>“ Hello </span>
+          <span class="again">Again! ”</span>
+        </b>
+        <img
+          class="logo-amikom-1"
+          alt=""
+          src="./public/logo-amikom-1@2x.png"
+          data-animate-on-scroll
+        />
+      </div>
+      <form class="rectangle-parent">
+        <div class="frame-child"></div>
+        <button class="log-in-wrapper" id="frameButton">
+          <b class="log-in1">Log in</b>
+        </button>
+        <div class="belum-punya-akun-container">
+          Belum Punya Akun ?
+          <span class="span"> </span>
+        </div>
+        <button class="daftar-sekarang" id="daftarSekarang">
+          Daftar Sekarang
+        </button>
+        <b class="log-in2">Log In</b>
+        <button class="lupa-password" id="lupaPassword">Lupa Password ?</button>
+        <div class="atau-parent">
+          <div class="atau">Atau</div>
+          <img class="frame-item" alt="" src="./public/group-600.svg" />
+        </div>
+        <button class="frame-wrapper" id="frameButton1">
+          <div class="google-parent">
+            <img class="google-icon" alt="" src="./public/google.svg" />
+
+            <b class="masuk-dengan-google">Masuk Dengan Google</b>
+          </div>
+        </button>
+        <div class="nidn">NIDN</div>
+        <div class="div">:</div>
+        <img class="frame-inner" alt="" src="./public/vector-41.svg" />
+
+        <input
+          class="input"
+          type="number"
+          defaultvalue="22.01.4846"
+          placeholder="22.01.4846"
+          min="10"
+          max="10"
+          required
+          id="NIDN"
+        />
+
+        <div class="password">Password</div>
+        <div class="div1">:</div>
+        <img class="vector-icon" alt="" src="./public/vector-41.svg" />
+
+        <input
+          class="group-input"
+          type="password"
+          defaultvalue="12345"
+          placeholder="Password"
+          maxlength="10"
+          minlength="5"
+          required
+          id="PASSWORD"
+        />
+
+        <img
+          class="mdieye-off-outline-icon"
+          alt=""
+          src="./public/mdieyeoffoutline.svg"
+        />
+      </form>
+    </div>
+
+    <script>
+      var frameButton = document.getElementById("frameButton");
+      if (frameButton) {
+        frameButton.addEventListener("click", function (e) {
+          window.location.href = "./dashboard.html";
+        });
+      }
+      
+      var daftarSekarang = document.getElementById("daftarSekarang");
+      if (daftarSekarang) {
+        daftarSekarang.addEventListener("click", function (e) {
+          window.location.href = "./not-found.html";
+        });
+      }
+      
+      var lupaPassword = document.getElementById("lupaPassword");
+      if (lupaPassword) {
+        lupaPassword.addEventListener("click", function (e) {
+          window.location.href = "./not-found.html";
+        });
+      }
+      
+      var frameButton1 = document.getElementById("frameButton1");
+      if (frameButton1) {
+        frameButton1.addEventListener("click", function (e) {
+          window.location.href = "./not-found.html";
+        });
+      }
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>
